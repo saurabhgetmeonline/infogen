@@ -1,0 +1,177 @@
+#contact-us-page {
+    /* border: 3px solid yellow;  */
+    display: grid;
+    grid-template-columns: 55% 40%;
+    gap: 5%;
+    padding: 60px 40px;
+}
+.contact-us-left-side {
+    /* border: 2px solid blue; */
+    padding: 0 20px;
+}
+/* .contact-us-right-side {
+    border: 3px solid red;
+} */
+#contact-us-left-side-contact-us-heading {
+    color: #013878;
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    padding: 10px 0;
+}
+#contact-us-left-side-get-in-touch-heading {
+    font-size: 3rem;
+}
+.contact-us-left-side-get-in-touch-para {
+    /* border: 2px solid red; */
+    padding: 15px 0;
+}
+
+.contact-us-left-side-address-part-one-row {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+.address-part-one-row-address-image {
+    background-color: #013878;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.address-part-one-row-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.address-part-one-row-text-heading {
+    color: #013878;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* css for form */
+form {
+    padding: 20px;
+    background-color: #013878;
+    /* border-radius: 10px; */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: #013878;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+select {
+    appearance: none;
+    /* background-image: url('../images/contact-us/Group\ 50.png'); */
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    /* padding-left: 30px; */
+    width: 100%;
+}
+
+input[type="tel"] {
+    width: 100%;
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+::placeholder {
+    color: #acacac;
+}
+
+input[type="submit"] {
+    background-color: #e87500;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d15e00;
+}
+
+
+
+
+/* this style to style the ellipse */
+.contact-us-right-side {
+    padding-bottom: 30px;
+    position: relative;
+    
+
+}
+#contact-us-right-side-ring {
+    position: absolute;
+    top: -57px;
+    right: -43px;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #contact-us-left-side-get-in-touch-heading {
+        font-size: 2.5rem;
+    }   
+}
+@media only screen and (max-width: 480px) {
+    #contact-us-page {
+        grid-template-columns: 100%;
+        /* border: 2px solid red; */
+        place-items: center;
+        padding: 40px 20px;
+    }
+    #contact-us-left-side-get-in-touch-heading {
+        font-size: 2rem;
+    }
+    .contact-us-left-side {
+        width: 100%;
+        padding: 0px;
+    }
+    .contact-us-right-side {
+        /* border: 3px solid blue; */
+        width: 90%;
+    }
+    #contact-us-right-side-ring {
+        position: absolute;
+        top: -57px;
+        right: -px;
+    
+    }
+    #address-part-one-row-text-para {
+        font-size: 0.8rem;
+    }
+   
+}
+
+
+

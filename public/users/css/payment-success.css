@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.payment-succes {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+#icon-image{
+    width:100%;
+    text-align: center;
+}
+#icon-image img {
+    max-width: 60px;
+    margin-top: 55px;
+    /* margin-left: 45%; */
+}
+
+.payment-message {
+    text-align: center;
+}
+
+.success-message {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.payment-receive-para {
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    color: white;
+    background-color: #E87500;
+    border: none;
+    font-weight: 600;
+    padding: 5px 30px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+/* RESPONSIVE CSS */
+
+
+@media only screen and (max-width:1200px) {
+    .payment-succes {
+        width: 50%;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .payment-succes {
+        width: 55%;
+        padding: 0 30px;
+    }
+
+    #icon-image img {
+        margin-top: 45px;
+    }
+    .btn button {
+        margin-bottom: 35px;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .payment-succes {
+        width: 80%;
+        padding: 0 40px;
+    }
+    #icon-image img {
+        margin-top: 40px;
+    }
+
+    .btn button {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .payment-succes {
+        width: 100%;
+        padding: 0 30px;
+    }
+    #icon-image img {
+        margin-top: 30px;
+    }
+
+    .btn button {
+        margin-bottom: 25px;
+    }
+}
+

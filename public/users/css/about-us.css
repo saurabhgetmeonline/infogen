@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #about-us-banner-section {
+    border: 5px solid blue;
+} */
+#about-us-banner-section img {
+    width: 100%;
+    /* height: 80vh; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blue-border-image {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.blue-border-image img{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.what-we-do-section {
+    /* border: 3px solid red; */
+    padding: 20px;
+    font-family: inter;
+
+}
+#what-we-do-section-header {
+    color: #00469A;
+    /* border: 1px solid red; */
+    padding: 10px;
+
+}
+#what-we-do-section-first-para {
+    /* border: 1px solid red; */
+    text-align: justify;
+    padding: 10px;
+}
+#what-we-do-section-second-para {
+    /* border: 1px solid red; */
+    text-align: justify;
+    padding: 10px;
+}
+#what-we-do-section-third-row {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+}
+#what-we-do-section-third-row img {
+    /* border: 1px solid red; */
+    width: 100%;
+   
+}
+#what-we-do-section-third-row p {
+    /* border: 1px solid red; */
+    padding: 50px 0 0 20px;
+    width: 100%;
+    text-align: justify;  
+    height: 100%;
+
+}
+@media only screen and (max-width:480px) {
+    #what-we-do-section-third-row {
+        grid-template-columns: 1fr;
+    }
+    #what-we-do-section-third-row p {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+.tab-container {
+    font-family: inter;
+    padding: 20px;
+    /* border: 2px solid blue; */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    border-bottom: 1.5px solid #00469A;
+    width: 100%; /* Set width to 100% of the viewport width */
+    background-color: #fff;
+    /* padding: 10px; */
+    /* border: 2px solid blue; */
+    gap: 5px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #eeeeee;
+    border: 1px solid white;
+    box-shadow: 0 0 1px;
+}
+
+.tab.active {
+    background-color: #fff;
+}
+
+.tab-content-container {
+    margin-top: 20px;
+    background-color: #fff;
+    display: none;
+    width: 100%; /* Set width to 100% of the viewport width */
+    /* border: 2px solid blue; */
+}
+.tab-content-container p {
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 67%;
+    margin: auto
+}
+.tab-content-container.active {
+    display: block;
+}
+@media only screen and (max-width: 480px) {
+    .tab-content-container p {
+        width: 100%;
+        text-align: justify;
+    }
+}

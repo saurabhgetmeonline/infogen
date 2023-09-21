@@ -1,0 +1,251 @@
+.market-reports-heading {
+    text-align: center;
+    font-size: 2rem;
+    /* border: 5px solid red; */
+    padding: 20px;
+    font-weight: 500;
+    /* position: sticky;
+    top: 70px;
+    background-color: white;
+    z-index: 1; */
+}
+#reports-main-body {
+    /* border: 3px solid yellow; */
+    height: 600px;
+    display: grid;
+    grid-template-columns: 20.5% 79.5%;
+    height: max-content;
+    padding-bottom: 30px;
+}
+.reports-main-body-left-side-bar {
+    /* border: 1px solid blue; */
+    padding: 70px 10px 0 10px;
+    height: 600px;
+    position: sticky;
+    left: 0;
+    top: 85px;
+    
+
+    #reports-main-body-left-side-bar-heading {
+        text-align: center;
+        border: 1px solid white;
+        padding: 10px;
+        box-shadow: 0 0 1px;
+    }
+    .reports-main-body-left-side-bar-categories-lists {
+        list-style-type: none;
+        border-bottom: 1px solid white;
+        box-shadow: 0 0 1px;
+        padding-bottom: 15px;
+    }
+    .reports-main-body-left-side-bar-categories-lists li {
+        /* border: 1px solid red; */
+        padding: 5px;
+        border-bottom: 1px solid #909090;
+        box-shadow: 0 0 1px;
+        font-weight: 500;    
+    }
+    .reports-main-body-left-side-bar-categories-lists li a {
+        text-decoration: none;
+        color: #013878;
+        
+    }
+}
+
+
+
+.reports-main-body-categories-display-area {
+    /* border: 1px solid tomato; */
+    padding: 20px 10px 0 10px;
+
+    .reports-main-body-categories-display-area-heading {
+        text-align: center;
+        border: 1px solid white;
+        padding: 10px;
+        box-shadow: 0 0 1px;
+        color: #013878;
+    }
+    .reports-main-body-categories-display-area-main-content {
+        /* border: 1px solid tomato; */
+        box-shadow: 0 0 1px;
+    }
+}
+.reports-main-body-categories-display-area-all-cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.reports-main-body-categories-display-area-single-card {
+    /* width: 100%; */
+    border: 2px solid white;
+}
+.display-area-single-card-image-wrapper {
+    /* width: 100%; */
+    /* border: 2px solid blue; */
+    position: relative;
+    
+}
+.display-area-single-card-image-wrapper img {
+    width: 100%;  
+    
+}
+.display-area-single-card-image-texts {
+    background-color: rgba(255, 255, 255, 0.692); 
+    color: #555555;   
+    /* color: white; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    /* filter: blur(1px); */
+}
+
+.display-area-single-card-text {
+    text-align: justify;
+    padding: 7px 0;
+}
+.display-area-single-card-text-read-more-link a {
+    text-decoration: none;
+    color: #e87500;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    #reports-main-body {
+        grid-template-columns: 100%;
+    }
+    .reports-main-body-left-side-bar {
+        position: static;
+        top: -40px;
+        display: none;
+        /* z-index: 1; */
+        background-color: white;
+        padding: 10px;
+        outline: none;
+    }
+    .left-side-bar-mobile {
+        display: block;
+        /* border: 5px solid red; */
+        height: 100px;
+    }
+    .reports-main-body-left-side-bar-categories-lists {
+        width: 100%;
+    }
+    .market-reports-heading {
+        padding-bottom: 0;
+    }
+    .reports-main-body-categories-display-area-all-cards {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my-pagination-wrapper {
+    /* border: 2px solid red; */
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(215, 209, 209);
+
+    display: grid;
+    place-items: center;
+}
+#my-pagination {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+}
+.my-pagination-show-1 {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-pagination-show-1 span a{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+
+    padding: 7px;
+    /* background-color: tomato; */
+    border-radius: 2px;
+    color: #4281c9;
+}
+
+.my-pagination-show-2 {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+}
+
+
+.my-pagination-show-1 .pag-active  a{
+    background-color: #4281c9;
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+@media only screen and (max-width: 1500px) {
+    #my-pagination {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #my-pagination {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .my-pagination-show-2, .to-hide-on-mob {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .to-hide-on-mob {
+        background-color: red;
+        display: none !important;
+    }
+}
+/* ------------PRODUCT LISTING PAGE PAGINATION Section ENDS HERE---------------- */

@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.payment-portal-section {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    padding: 40px;
+    
+
+    .payment-portal-section-child {
+        width: 100%;
+        padding: 20px;
+    }
+    .billing-information {
+        border: 2px solid #ababab;
+    }
+}
+
+.billing-information-heading {
+    text-align: center;
+}
+
+.billing-information-form {
+    /* border: 5px solid red; */
+    padding: 15px;
+    .billing-information-form-input {
+        /* border: 2px solid blue; */
+        width: 49.5%;
+        padding: 7px;
+        font-size: 1rem;
+        font-family: inter;
+        margin: 10px 0 10px 0;
+    }
+    .billing-information-form-input-2 {
+        width: 100%;
+        padding: 7px;
+        font-size: 1rem;
+        font-family: inter;
+        margin: 10px 0 10px 0;
+        /* border: 2px solid blue; */
+    }
+    #phone-code-select {
+        width: 100%;
+        padding: 7px;
+        font-size: 1rem;
+        font-family: inter;
+        margin: 10px 0 10px 0;
+        color: #666;
+    }
+}
+
+.billing-information-form-input-3 {
+    width: 40%;
+    padding: 7px;
+    font-size: 1rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+    /* border: 5px solid red; */
+}
+.billing-information-form-input-4 {
+    width: 30%;
+    padding: 7px;
+    font-size: 1rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+    /* border: 5px solid red; */
+}
+.billing-information-form-input-5 {
+    width: 20%;
+    padding: 7px;
+    font-size: 1.7rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    margin-left: 10px;
+    /* border: 5px solid red; */
+}
+.billing-information-form-input-6{
+    width: 10%;
+    padding: 7px;
+    font-size: 1.7rem;
+    font-family: inter;
+    margin: 0px 0 10px 0;
+    /* border: 5px solid red; */
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secure-payment-line {
+    padding: 5px;
+    /* border: 2px solid red; */
+    display: flex;
+    width: 60%;
+    margin-top: 20px;
+    /* .secure-payment-line-img {
+        border: 1px solid red;
+    } */
+    .secure-payment-line-text {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 60%;
+        font-weight: 700;
+
+    }
+    .secure-payment-line-text-100 {
+        font-size: 2rem;
+    }
+}
+
+
+.order-summary {
+    background-color: #013878;
+    color: white;
+}
+
+
+
+.order-summary-heading {
+    text-align: center;
+    order: 2px solid red;
+}
+.order-summary-box{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: justify;
+    padding:  20px 0;
+    place-items: center;
+}
+.order-summary-box-sub-total {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+.order-summary-box-order-total {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    font-weight: 700;
+}
+
+.order-summarry-select-payment-option-box {
+    margin-top: 20px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 10px 20px;
+    .order-summarry-select-payment-option-heading {
+        font-size: 1.3rem;  
+    }
+    .order-summarry-select-payment-option-various-box {
+        /* border: 1px solid red; */
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+   
+}
+
+
+.payment-submit-btn-box {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+#payment-submit-btn {
+    border: 2px solid white;
+    background-color: #013878;
+    color: white;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#payment-submit-btn:hover {
+    background-color: #e87500;
+    color: white;
+    border: none;
+    padding: 9px;
+    box-shadow: 0 0 2px;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .payment-portal-section {
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .billing-information-form-input {
+        /* border: 2px solid red; */
+        width: 200%;
+    }
+
+}

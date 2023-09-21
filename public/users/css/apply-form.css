@@ -1,0 +1,179 @@
+* {
+    font-family: sans-serif;
+}
+a {
+    cursor: pointer;
+}
+.apply-now-form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    padding: 5px 30px;
+}
+
+.form-data {
+    padding: 10px;
+    width: 100%;
+}
+
+.para-text {
+    margin-left: 11px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-data label {
+    display: inline-block;
+    width: 20%;
+    font-weight: 600;
+
+}
+
+.form-data input {
+    width: 75%;
+}
+
+.first-heading {
+    text-align: center;
+}
+
+.second-heading {
+    text-align: center;
+    color: rgb(67, 67, 238);
+    margin-bottom: 40px;
+}
+
+.form-btn button {
+    background-color: #E87500;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-left: 83%;
+}
+
+.policy {
+    padding: 10px;
+    width: 100%;
+}
+
+.policy-para-top {
+    font-weight: 600;
+}
+
+.policy-para-bottom {
+    font-size: 14px;
+}
+
+.chk-box {
+    padding: 7px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chk-box label {
+    font-size: 13px;
+}
+
+.form-data label span {
+    color: red;
+}
+
+.apply-now-form {
+    position: relative;
+}
+
+#cross-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+img {
+    width: 20px;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width:1200px) {
+
+    .form-data {
+        width: 100%;
+    }
+
+    .form-data label {
+        width: 30%;
+
+    }
+
+    .form-data input {
+        width: 65%;
+
+    }
+
+    .policy-para-bottom {
+        width: 80%;
+    }
+
+    .form-btn button {
+        margin-left: 78%;
+
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .form-data {
+        width: 100%;
+    }
+
+    .form-data label {
+        width: 40%;
+
+    }
+
+    .form-data input {
+        width: 55%;
+    }
+
+    .form-btn button {
+        margin-left: 70%;
+
+    }
+
+    .policy-para-bottom {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+
+    .para-text {
+        text-align: center;
+    }
+
+    .form-data label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-data input {
+        width: 90%;
+    }
+
+    .form-btn button {
+        margin-left: 4%;
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+
+    .policy-para-bottom {
+        width: 100%;
+    }
+
+}

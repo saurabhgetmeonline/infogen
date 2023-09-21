@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.payment-failed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    padding:0 50px;
+}
+#icon-image{
+    width:100%;
+    text-align: center;
+}
+
+#icon-image img {
+    max-width: 60px;
+    margin-top: 55px;
+}
+
+.payment-message {
+    text-align: center;
+}
+
+.failed-message {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.payment-declined-para{
+    margin-top: 25px;
+    font-weight: 500;
+
+}
+.btn{
+    text-align: center;
+}
+
+.btn button {
+    color: white;
+    background-color: #E87500;
+    border: none;
+    font-weight: 600;
+    padding: 5px 30px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width:1200px) {
+    .payment-failed{
+        width:50%;
+    }
+} 
+
+ @media only screen and (max-width:900px) {
+    .payment-failed{
+        width:55%;
+    }
+     #icon-image img {
+        margin-top: 40px;
+    }
+    .btn button{
+        margin-bottom: 30px;
+    }
+} 
+
+
+@media only screen and (max-width:600px) {
+    .payment-failed{
+        width:80%;
+    }
+    .btn button {
+        margin-bottom: 25px;
+    }
+    #icon-image img{
+       margin-top: 30px;
+    }
+}
+@media only screen and (max-width:370px) {
+    .payment-failed{
+        width:100%;
+    }
+    .btn button{
+        margin-bottom: 20px;
+     }
+     #icon-image img{
+        margin-top: 20px;
+        max-width: 50px;
+     }
+} 

@@ -1,0 +1,114 @@
+* {
+    font-family: inter;
+}
+.careers-section-banner {
+    width: 100%;
+    /* border: 5px solid tomato; */
+    position: relative;
+}
+#carrers-section-banner-text-box {
+    /* border: 3px solid blue; */
+    width: fit-content;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#carrers-section-banner-text-para {
+    font-size: 2rem;
+}
+.carrers-section-banner-text-heading {
+    font-size: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    #carrers-section-banner-text-para {
+        font-size: 1.5rem;
+    }
+    .carrers-section-banner-text-heading {
+        font-size: 3rem;
+    }
+} 
+@media only screen and (max-width: 480px) {
+    #carrers-section-banner-text-para {
+        font-size: 1rem;
+    }
+    .carrers-section-banner-text-heading {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+.carrers-section-texts-section {
+    /* border: 2px solid red; */
+    text-align: justify;
+    padding: 40px;
+}
+#carrers-section-texts-section-second-para {
+    /* border: 2px solid red; */
+    padding: 10px 0 20px 0;
+}
+@media only screen and (max-width: 480px) {
+    .carrers-section-texts-section {
+        padding: 20px;
+    }   
+}
+
+
+
+
+
+
+
+
+.careers-section-current-opening-section {
+    /* border: 3px solid blue; */
+    padding: 20px 40px;
+}
+#careers-section-current-opening-section-heading {
+    /* border: 2px solid red; */
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #e87500;
+}
+.careers-section-current-opening-section-openings-box-one-opening {
+    /* border: 2px solid red; */
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.careers-section-current-opening-section-openings-box-one-opening-heading {
+    color: #013878;
+}
+.careers-section-current-opening-section-openings-box-one-opening-para {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.careers-section-current-opening-section-openings-box-one-opening-para span {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+}
+.careers-section-current-opening-section-openings-box-one-opening-discription {
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.careers-section-current-opening-section-openings-box-one-opening-see-details-link {
+    color: #e87500;
+    font-weight: 700;
+    font-size: 1rem;
+    /* border: 2px solid red; */
+}
+@media only screen and (max-width:480px) {
+    .careers-section-current-opening-section {
+        padding: 20px;
+    }
+}

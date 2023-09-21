@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.error-page {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+.error-number{
+    color:#013878;
+    font-size: 75px;
+    padding-top: 40px;
+}
+
+.error-message {
+    text-align: center;
+}
+
+.first-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -70px;
+}
+
+.second-text{
+    margin-top: 20px;
+    font-weight: 500;
+
+}
+.btn{
+    text-align: center;
+}
+.btn button {
+    color: white;
+    background-color: #E87500;
+    border: none;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width:900px) {
+    .error-page{
+        width:50%;
+        padding:0 20px;
+
+    }
+    .error-number{
+        font-size: 65px;
+    padding-top: 20px;
+    padding-bottom:5px;
+    }
+    .btn button{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .error-page{
+        width:60%;
+        padding:0 20px;
+    }
+    .btn button{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+ 
