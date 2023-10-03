@@ -1,13 +1,11 @@
-* {
-    font-family: inter;
-}
-.careers-section-banner {
+#carrer-section-banner-image img {
     width: 100%;
-    /* border: 5px solid tomato; */
+    height: 50%;
+}
+.career-banner-section {
     position: relative;
 }
 #carrers-section-banner-text-box {
-    /* border: 3px solid blue; */
     width: fit-content;
     color: white;
     position: absolute;
@@ -16,20 +14,24 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+#carrers-section-banner-text-box {
+    width: 90%;
+}
 #carrers-section-banner-text-para {
     font-size: 2rem;
 }
 .carrers-section-banner-text-heading {
     font-size: 4rem;
+    width: 100%;
 }
-@media only screen and (max-width: 768px) {
-    #carrers-section-banner-text-para {
+@media only screen and (max-width:991px) {
+    .carrers-section-banner-text-heading {
+        font-size: 2.5rem;
+    }
+    .carrers-section-banner-text-para {
         font-size: 1.5rem;
     }
-    .carrers-section-banner-text-heading {
-        font-size: 3rem;
-    }
-} 
+}
 @media only screen and (max-width: 480px) {
     #carrers-section-banner-text-para {
         font-size: 1rem;
@@ -60,6 +62,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+.down-pointing-line-wrapper {
+    /* border: 2px solid red; */
+    padding-top: 30px;
+    width: 100%;
+}
+.down-pointing-line-wrapper img {
+    /* border: 2px solid red; */
+    width: 100%;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 

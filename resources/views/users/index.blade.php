@@ -1,6 +1,10 @@
 @extends('users.layout')
+<link rel="stylesheet" href="/users/css/top-bar.css">
+<link rel="stylesheet" href="/users/css/slider.css">
+
+<!-- TOP BAR SECTION -->
 <div class="contact-bar">
-    <p>Contact us at: <a href="tel:+919356439799">+91 93564 39799</a> | <a href="mailto:contact@infogenceglobalresearch.com">contact@infogenceglobalresearch.com</a></p>
+    <p>Contact us at: <a href="tel:+1234567890">+91 93564 39799</a> | <a href="mailto:info@example.com">contact@infogenceglobalresearch.com</a></p>
 </div>
 @section('content')
 <div class="input-search-box">
@@ -79,19 +83,25 @@
     </div>
 </section>
 
+<!-- CATEGORIES SECTION-->
 <section class="categories-section">
     <h1 class="categories-section-heading">Categories</h1>
-    <div class="categories-section-image-section">
-        @foreach($report_categories as $report_category)
-        <div class="categories-section-image-section-cards">
-            <a href="{{url('reports/'.$report_category->slug)}}">
-                <img src="/admins/assets/img/reports/category_image/{{$report_category->report_category_image}}" alt="{{$report_category->report_category_image}}">
-                <h2>{{$report_category->report_category_name}}</h2>
-            </a>
+    <div class="product">
+        <button class="pre-btn"><img src="/users/images/arrow-left.png" alt="" style="width: 15px;"></button>
+        <button class="nxt-btn"><img src="/users/images/arrow.png" alt="" style="width: 15px;"></button>
+        <div class="product-container categories-section-image-section">
+            @foreach($report_categories as $report_category)
+            <article class="single-image-box-slider product-card">
+                <a href="{{url('reports/'.$report_category->slug)}}">
+                    <div class="categories-section-image-section-cards">
+                        <img src="/admins/assets/img/reports/category_image/{{$report_category->report_category_image}}" alt="{{$report_category->report_category_image}}">
+                        <h2>{{$report_category->report_category_name}}</h2>
+                    </div>
+                </a>
+            </article>
+            @endforeach
         </div>
-        @endforeach
     </div>
-
 </section>
 
 <section class="top-market-reports">
@@ -163,4 +173,5 @@
     // Auto change slides every 2 seconds
     setInterval(nextSlide, intervalTime);
 </script>
+<script src="/users/js/slider.js" defer></script>
 @stop

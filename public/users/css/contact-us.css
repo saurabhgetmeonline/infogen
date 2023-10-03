@@ -142,14 +142,18 @@ input[type="submit"]:hover {
     #contact-us-left-side-get-in-touch-heading {
         font-size: 2.5rem;
     }   
-}
-@media only screen and (max-width: 480px) {
     #contact-us-page {
         grid-template-columns: 100%;
         /* border: 2px solid red; */
         place-items: center;
         padding: 40px 20px;
     }
+    .contact-us-right-side {
+        /* border: 2px solid red; */
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 480px) {
     #contact-us-left-side-get-in-touch-heading {
         font-size: 2rem;
     }
@@ -158,7 +162,6 @@ input[type="submit"]:hover {
         padding: 0px;
     }
     .contact-us-right-side {
-        /* border: 3px solid blue; */
         width: 90%;
     }
     #contact-us-right-side-ring {

@@ -78,9 +78,6 @@ Route::group(['middleware' => ['adminauth']], function () {
     // Route::get('/order-form', function () {
     //     return view('users.order-form');
     // });
-    // Route::get('/error', function () {
-    //     return view('users.errorpage');
-    // }); 
     
     Route::resource('/progress', ProgressController::class);
     Route::resource('/industry', IndustryController::class);

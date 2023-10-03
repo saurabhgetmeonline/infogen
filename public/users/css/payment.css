@@ -30,30 +30,30 @@
 .billing-information-form {
     /* border: 5px solid red; */
     padding: 15px;
-    .billing-information-form-input {
-        /* border: 2px solid blue; */
-        width: 49.5%;
-        padding: 7px;
-        font-size: 1rem;
-        font-family: inter;
-        margin: 10px 0 10px 0;
-    }
-    .billing-information-form-input-2 {
-        width: 100%;
-        padding: 7px;
-        font-size: 1rem;
-        font-family: inter;
-        margin: 10px 0 10px 0;
-        /* border: 2px solid blue; */
-    }
-    #phone-code-select {
-        width: 100%;
-        padding: 7px;
-        font-size: 1rem;
-        font-family: inter;
-        margin: 10px 0 10px 0;
-        color: #666;
-    }
+}
+.billing-information-form-input {
+    /* border: 2px solid blue; */
+    width: 49.5%;
+    padding: 7px;
+    font-size: 1rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+}
+.billing-information-form-input-2 {
+    width: 100%;
+    padding: 7px;
+    font-size: 1rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+    /* border: 2px solid blue; */
+}
+#phone-code-select {
+    width: 100%;
+    padding: 7px;
+    font-size: 1rem;
+    font-family: inter;
+    margin: 10px 0 10px 0;
+    color: #666;
 }
 
 .billing-information-form-input-3 {
@@ -82,17 +82,14 @@
     margin-left: 10px;
     /* border: 5px solid red; */
 }
-.billing-information-form-input-6{
+.billing-information-form-input-6 {
     width: 10%;
     padding: 7px;
     font-size: 1.7rem;
     font-family: inter;
-    margin: 0px 0 10px 0;
+    margin: 10px 0 10px 0;
     /* border: 5px solid red; */
     cursor: pointer;
-    background: transparent;
-    border: none;
-    float: right;
 }
 
 
@@ -161,7 +158,7 @@
     font-weight: 700;
 }
 .order-summary-box-order-total {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -210,16 +207,42 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1300px) {
+    .billing-information-form-input-3 {
+        width: 35%;
+    }
+    .billing-information-form-input-6 {
+        padding: 0;
+    }
+    .billing-information-form-input-5 {
+        font-size: 1.5rem;
+    }
+}
+ 
+
+@media only screen and (max-width: 1110px) { 
+    .billing-information-form-input {
+        width: 100%;
+    }
+    .billing-information-form-input-3 {
+        width: 100%;
+    }
+    .billing-information-form-input-4 {
+        width: 50%;
+    }
+    
+   
+
+}
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     .payment-portal-section {
         grid-template-columns: 100%;
         width: 100%;
     }
-    .billing-information-form-input {
-        /* border: 2px solid red; */
-        width: 200%;
-    }
+   .payment-portal-section {
+    padding: 15px;
+   }
 
 }

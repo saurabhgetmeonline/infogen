@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .form-container{
     width:50%;
     margin:auto;

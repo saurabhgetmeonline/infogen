@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: inter;
 }
+
+.stn-max-width {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 3px solid blue; */
+}
+
 
 .view-more-card {
     display: grid;
@@ -218,12 +228,15 @@
         width: fit-content;
         display: flex;
         justify-content: space-around;
-        /* border: 3px solid red; */
-        width: 85%;
+        /* border: 1px solid red; */
+        width: 90%;
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
     }
     .main-content-right-box-content-1-price-box-checkmark .container {
         display: flex;
         gap: 20px;
+        /* border: 1px solid red; */
 
     }
 }
@@ -294,7 +307,7 @@
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 991px) {
     .view-more-card {
         display: grid;
         grid-template-columns: 1fr;
@@ -336,5 +349,16 @@
         .main-content-left-side-box-tabs-heading {
             margin: 0px;
         }
+    }
+
+    .main-content-right-box-content-1-price-box-checkmark {
+        /* border: 2px solid red; */
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 550px) { 
+    .main-content-right-box-content-1-price-box-checkmark {
+        width: 90% !important;
     }
 }
